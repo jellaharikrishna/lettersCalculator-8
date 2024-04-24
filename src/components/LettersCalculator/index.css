@@ -1,0 +1,84 @@
+.bg-container {
+  background: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  padding: 20px;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.heading {
+  color: white;
+  font-family: Roboto;
+}
+.paragraph {
+  color: white;
+  font-family: Roboto;
+  font-size: 12px;
+}
+.text-input {
+  color: #e4e7eb;
+  font-family: Roboto;
+  font-size: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 4px;
+  outline: none;
+}
+
+.counting-letters {
+  color: #219a6f;
+  font-family: Roboto;
+  font-weight: bold;
+  height: 40px;
+  width: 130px;
+  background-color: white;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-left: 6px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.calculator-icon {
+  width: 100%;
+}
+
+@media (max-width: 770px) {
+  .bg-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .heading {
+    text-align: center;
+  }
+  .paragraph {
+    text-align: left;
+  }
+
+  .content-container {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    order: 1;
+  }
+  .image-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .calculator-icon {
+    width: 60%;
+  }
+}
